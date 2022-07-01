@@ -2,7 +2,7 @@
 
 ## Overview of PyBer Analysis
 
-After starting as a data analyst with PyBer, a python-based ride-sharing app company, I was tasked to perform an exploratory data analysis on rider and driver data across the nation. The data was to be read from csv files into panda dataframes to create numermous visualizations to depict the relationship between the type of city (e.g., Rural, Urban, and Suburban) and the number of riders and driver.  The visualizations should also highlight the percentage of total fares by riders, drivers, and type of city.  The analysis should help PyBer executives improve the access and determine affordability in underserved cities.
+After starting as a data analyst with PyBer, a python-based ride-sharing app company, I was tasked to perform an exploratory data analysis on rider and driver data across the nation. The data was to be read from csv files into panda data frames to create numermous visualizations depicting the relationship between the type of city (e.g., Rural, Urban, and Suburban) and the number of riders and drivers.  The visualizations should also highlight the percentage of total fares by total riders, total drivers, and types of cities.  The analysis should help PyBer executives improve access and determine affordability in underserved cities.
  
 ### Resources
 
@@ -17,7 +17,7 @@ After starting as a data analyst with PyBer, a python-based ride-sharing app com
 PyBer Summary Data Frame:
 ![Summary_df.png](Resources/Summary_df.png)
 
-Across the three city types, urban cities make up a majority of the riders and drivers.  As you would expect the number of riders and drivers decreases as the respective populations decrease.  That being said, suburban had the second most riders and drivers.  Rural areas had the lowest participation of riders and drivers.  Interestingly, the averages fares were inversely related to rider and driver participation.  Meaning that Rural cities generated a higher average fare per rider and driver.
+Across the three city types, urban cities constitute a majority of the riders and drivers.  As you would expect, the number of riders and drivers decreases as the city populations decrease.  That said, suburban cities had the second most riders and drivers, and rural areas had the lowest participation of riders and drivers.  Interestingly, average fares were inversely related to rider and driver participation.  Meaning that Rural cities generated a higher average fare per rider and average fare per driver.
 
    * Differences in total rides
       
@@ -25,7 +25,7 @@ Across the three city types, urban cities make up a majority of the riders and d
 
    * Differences in total drivers
       
-      Similar to total rides, drivers were heavily concentrated in urban cities.  Roughly four out of five drivers were located in urban areas.  Suburban cities had the second largest concentration of drivers where nearly 17 percent of the drivers are located in these cities.  Suprisingly, only 78 drivers were located in rural areas.  
+      Similar to total rides, drivers were heavily concentrated in urban cities.  Roughly four out of five drivers were located in urban areas.  Suburban cities had the second largest concentration of drivers, where nearly 17 percent of existing drivers are located.  Suprisingly, only 78 available drivers were located in rural areas.  
 
    * Differences in total fares
 
@@ -33,11 +33,11 @@ Across the three city types, urban cities make up a majority of the riders and d
 
    * Differences in average fares per ride
 
-      Interestingly, the revenue relationship is inversed when we review the average fares per ride.  This means that urban cities have the lowest average fares per ride.  Suburban cities have the second highest average fares per ride.  Last, rural cities have the highest average fares per ride.  This is largely due to the number of riders per city type.  Rural cities have by far the lowest number of riders, so the fares are spread across a smaller number of units.
+      The revenue relationship is inversely related when we review the average fares per rider.  This means that urban cities have the lowest average fares per rider.  Suburban cities have the second highest average fares per rider.  Furthermore, rural cities have the highest average fares per rider.  This is largely due to the number of riders per city type.  Rural cities have by far the fewest number of riders, so the fares are spread across a smaller number of units (i.e., riders).
 
    * Differences in average fares per driver
 
-      When we review the average fares per driver, we see the same inverted relationship that we observed above in the average fares per ride.  Like above, the number of drivers (the denominator of the equation) will greatly impact the average fares by driver.  Because of this relationship, urban cities have the lowest average fares per driver.  On the other end of the spectrum, rural cities have the highest average fares per driver.
+      When we review the average fares per driver, we see the same inverted relationship that we observed above in the average fares per rider.  Like above, the number of drivers (the denominator of the equation) will greatly impact the average fares by driver.  Because of this relationship, urban cities have the lowest average fares per driver.  On the other end of the spectrum, rural cities have the highest average fares per driver.
 
    * Differences in total fares by city type
 
@@ -52,9 +52,9 @@ To help the PyBer executives improve the access and determine affordability in u
 
    1. Market the average fare per ride in rural and suburban cities and/or create incentives to increase the number of suburban and rural drivers.  This will increase access in underserved areas.
 
-   2. Focus expanding PyBer in urban cities to target riders most likely to use ride-sharing services.  This will greatly increase revenue through significantly larger user bases in urban areas.
+   2. Focus expanding PyBer in urban cities to target riders most likely to use ride-sharing services.  This will greatly increase revenue through the significantly larger user bases observed in urban areas.
 
-   3. Capturing new data points to understand the best target ratio of drivers to riders in each city type.  This will allow PyBer executives to create a targt level of drivers based on various rider levels (i.e., number of rides). 
+   3. Capturing new data points to understand the best target ratio of drivers to riders in each city type.  This will allow PyBer executives to create a targt level of drivers based on the number of riders in each city type.
 
 ## PyBer Analysis Code Snippets
 
